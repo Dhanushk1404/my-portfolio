@@ -48,7 +48,7 @@ const Home = () => {
             </div>
           </div>
          
-          <div className="bg-[#fe5617] px-5 py-2 rounded-2xl font-bold ">
+          <div className="bg-[#fe5617] px-5 py-2 rounded-2xl font-bold shadow-lg ">
             <a href="">Download CV</a>
           </div>
         </div>
@@ -56,7 +56,7 @@ const Home = () => {
         <div className="order-1 lg:order-2 flex justify-end items-center">
           <img
             className="w-[85%] rounded-[50px]"
-            src="/profile.jpg"
+            src="/profile.png"
             alt="Profile"
           />
         </div>
