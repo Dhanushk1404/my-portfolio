@@ -29,9 +29,7 @@ const Home = () => {
           </h2>
           
           <p className="text-lg md:text-xl text-gray-700 font-medium">
-            A passionate MERN stack developer with 2 year of experience,
-            dedicated to building user-friendly web applications. I thrive on
-            learning and sharing knowledge as a tutor and content creator.
+              A passionate MERN stack enthusiast with a strong foundation in building user-friendly web applications. Eager to learn, grow, and contribute to dynamic teams. Enthusiastic about sharing knowledge as a tutor and content creator, fostering innovation and collaboration.
           </p>
 
           
