@@ -1,20 +1,19 @@
 import {
   FaHtml5,
-  FaCss3Alt,
   FaJsSquare,
   FaReact,
   FaNode,
-  FaJava,
+  FaGithub,
 } from "react-icons/fa";
 import {
   SiTailwindcss,
-  SiBootstrap,
   SiExpress,
   SiNextdotjs,
   SiMongodb,
-  SiPostgresql,
-  SiOracle,
+  SiPostman,
 } from "react-icons/si";
+import { DiJava } from "react-icons/di"; // Import Java icon
+import { SiPostgresql } from "react-icons/si"; // Import PostgreSQL icon
 
 const About = () => {
   return (
@@ -35,27 +34,26 @@ const About = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {/* Skill Boxes */}
             {[
-              { Icon: FaHtml5, color: "#e34c26", name: "HTML5" },
-              { Icon: FaCss3Alt, color: "#264de4", name: "CSS3" },
-              { Icon: FaJsSquare, color: "#f7df1e", name: "JavaScript" },
-              { Icon: FaReact, color: "#61dbfb", name: "React.js" },
-              { Icon: FaNode, color: "#68a063", name: "Node.js" },
-              { Icon: SiExpress, color: "#000000", name: "Express.js" },
-              { Icon: SiMongodb, color: "#47a248", name: "MongoDB" },
-              { Icon: SiNextdotjs, color: "#000", name: "Next.js" },
-              { Icon: SiPostgresql, color: "#336791", name: "PostgreSQL" },
-              { Icon: SiOracle, color: "#f80000", name: "Oracle" },
-              { Icon: FaJava, color: "#007396", name: "Java" },
-              { Icon: SiBootstrap, color: "#563d7c", name: "Bootstrap" },
-              { Icon: SiTailwindcss, color: "#38bdf8", name: "Tailwind CSS" },
-            ].map(({ Icon, color, name }, idx) => (
+              { Icon: FaHtml5, color: "#e34c26", name: "HTML5", level: "90%" },
+              { Icon: FaJsSquare, color: "#f7df1e", name: "JavaScript", level: "80%" },
+              { Icon: FaReact, color: "#61dbfb", name: "React.js", level: "85%" },
+              { Icon: FaNode, color: "#68a063", name: "Node.js", level: "75%" },
+              { Icon: FaGithub, color: "#000000", name: "GitHub", level: "70%" },
+              { Icon: SiExpress, color: "#000000", name: "Express.js", level: "80%" },
+              { Icon: SiMongodb, color: "#47a248", name: "MongoDB", level: "80%" },
+              { Icon: SiNextdotjs, color: "#000000", name: "Next.js", level: "70%" },
+              { Icon: SiTailwindcss, color: "#38bdf8", name: "Tailwind CSS", level: "90%" },
+              { Icon: SiPostman, color: "#ef5b25", name: "Postman", level: "80%" },
+              { Icon: DiJava, color: "#f8981d", name: "Java", level: "75%" }, // Added Java skill
+              { Icon: SiPostgresql, color: "#336791", name: "PostgreSQL", level: "80%" }, // Added PostgreSQL skill
+            ].map((skill, index) => (
               <div
-                key={idx}
-                className="flex flex-col items-center p-6 bg-[#444] rounded-lg shadow-md transition-transform transform hover:scale-105 hover:shadow-[0_0_15px_rgba(254,86,23,0.6)]"
-                style={{ color }}
+                key={index}
+                className="flex flex-col items-center p-6 rounded-lg shadow-md bg-[#444] hover:shadow-xl hover:shadow-[#fe5617]/70 transition-all duration-300 transform hover:scale-105"
               >
-                <Icon size={40} />
-                <span className="mt-2 font-bold text-gray-200">{name}</span>
+                <skill.Icon size={40} style={{ color: skill.color }} />
+                <span className="font-bold text-gray-200 mt-2">{skill.name}</span>
+                <span className="text-sm text-gray-400 font-bold mt-1">{skill.level}</span>
               </div>
             ))}
           </div>
