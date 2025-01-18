@@ -45,7 +45,7 @@ const Project = () => {
     <div id="project" className="bg-[#333] min-h-screen flex flex-col items-center">
       <div className="max-w-[90%] mx-auto font-inter space-y-10 py-10">
         {/* Header */}
-        <h1 className="text-4xl md:text-5xl font-bold text-center text-[#fe5617]">
+        <h1 className="text-4xl md:text-5xl font-bold text-center text-[#fe5617] pt-10">
           My Projects
         </h1>
 
