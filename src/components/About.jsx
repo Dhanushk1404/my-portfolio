@@ -12,12 +12,12 @@ import {
   SiMongodb,
   SiPostman,
 } from "react-icons/si";
-import { DiJava } from "react-icons/di"; // Import Java icon
-import { SiPostgresql } from "react-icons/si"; // Import PostgreSQL icon
+import { DiJava } from "react-icons/di"; 
+import { SiPostgresql } from "react-icons/si"; 
 
 const About = () => {
   return (
-    <div id="about" className="bg-[#333] min-h-screen flex items-center">
+    <div id="about" className="bg-[#333] min-h-screen flex items-center pt-10">
       <div className="max-w-[90%] md:max-w-[75%] mx-auto font-inter space-y-10 py-10">
         <h1 className="text-4xl md:text-5xl font-bold text-center text-[#fe5617]">
           About Me
