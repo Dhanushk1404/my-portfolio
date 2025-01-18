@@ -12,7 +12,7 @@ const Header = () => {
         {/* Logo */}
         <div>
           <h1 className="text-[2.5rem] font-bold text-[#FFF] hover:text-[#fe5617] transition-all duration-300">
-            Dhanush
+            DHANUSH
           </h1>
         </div>
 
